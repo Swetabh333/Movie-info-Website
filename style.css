@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(180deg,#1D1918 50%,#F0AD2F 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+
+
+.container{
+    
+    background-color: #1E293E;
+    height:185px;
+    width:700px;
+    border-radius: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items:center; */
+    overflow: hidden;
+    justify-content: center;
+    transition: 0.6s ease-out;
+}
+
+.outer{
+    padding:25px 25px;
+}
+
+.search-box{
+    height:175px;
+    margin-bottom:45px;
+    text-align:center;
+}
+
+.search-box span{
+    opacity:1;
+    margin-top:60px;
+    display: block;
+    margin-bottom:20px;
+    font-size: 23px;
+    font-weight:500;
+    color:white;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+
+.not-found{
+    scale:0;
+    opacity:0;
+    margin-top:30px;
+    margin-bottom: 0;
+    color:white;
+    font-size:22px;
+    font-weight: 500;
+}
+
+
+
+.search-box input{
+    margin-top:45px;
+    width:500px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-right: 15px;
+    font-size:23px;
+    color:white;
+    border: white outset 0.2px;
+    background-color: #1E293E;
+}
+
+.search-box input::placeholder{
+    color: rgb(155, 146, 146);
+    font-size:19px;
+}
+
+.search-box button{
+    margin-top:45px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1E293E;
+    height: 44px;
+    width:95px;
+    border-radius: 5px;
+    background-color: #F0AD2F;
+    border: none;
+}
+
+.search-box button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.break{
+    flex-basis: 100%;
+    height:0;
+}
+
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay:0.1s;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+        scale:1;
+    }
+}
+
+.movie-details{
+    opacity: 0;
+    scale: 0;
+    overflow: hidden;
+    margin-top:0;
+    padding-top:0;
+    display: flex;
+    flex-direction: column;
+}
+
+.two-sep{
+    display: flex;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%
+}
+
+.poster{
+    width:50%;
+}
+
+.poster img{
+    height:360px;
+    width:280px;
+}
+
+.info{
+    color:white;
+}
+
+.genre{
+    display: flex;
+    gap:35px;
+    color:#667183}
+
+.genre-1,.genre-2,.genre-3{
+    padding:3px 3px;;
+    border: white 0.3px outset;
+    border-radius: 5px;
+}
+
+.description{
+    margin-top:30px;
+}
+
+.dates{
+    margin-bottom:45px;
+    color:#667183;
+}
+
+.plot{
+    color:#667183;
+    line-height: 30px;
+}
+
+.cast{
+    line-height: 45px;
+    color:#667183;
+    margin-top:15px;
+}
+
+.plottext,.casttext{
+    color:white;
+}
+
+.stars img{
+    position:relative;
+    top:7px;
+    right:7px;
+    height:18px;
+    margin-bottom:10px;
+    
+}
+
+.stars span{
+    font-size:30px;
+    font-weight:800;
+}
+
+.stars{
+    margin-bottom:40px;
+}
+
+.Name{
+    margin-bottom:50px;
+    font-size:30px;
+    font-weight:500;
+    color:white;
+}
