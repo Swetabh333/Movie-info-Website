@@ -7,7 +7,7 @@ search.addEventListener("click",()=>{
     let movie=input.value;
         
     document.querySelector(".cast span").innerHTML=""
-    fetch(`http://www.omdbapi.com/?t=${movie}&apikey=${key}`).then((res)=>{
+    fetch(`https://www.omdbapi.com/?t=${movie}&apikey=${key}`).then((res)=>{
         return res.json();
     }).then((data)=>{
         if(data.Response=="False"){
