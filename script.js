@@ -32,7 +32,7 @@ search.addEventListener("click",()=>{
         document.querySelector(".poster img").src=`${data.Poster}`;
         // document.querySelector(".poster img").src=`${data.Poster}`;
         document.querySelector(".rating").innerHTML=data.imdbRating;
-        document.querySelector(".dates").innerHTML=document.querySelector(".dates").innerHTML + data.Released;
+        document.querySelector(".dates").innerHTML= data.Released;
         document.querySelector(".plot").innerHTML=`<h2 class="plottext">Plot:</h2>` + data.Plot;
         let actors=data.Actors.split(",")
         for(let i=0;i<actors.length;i++){
